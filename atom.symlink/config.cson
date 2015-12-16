@@ -21,9 +21,8 @@
     ]
     themes: [
       "atom-dark-ui"
-      "solarized-dark-syntax"
     ]
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"

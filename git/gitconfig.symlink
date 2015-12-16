@@ -4,8 +4,8 @@
 [hub]
   protocol = git
 [user]
-  name = Trevor Dorsey
-  email = tsdorsey@gmail.com
+	name = Peter Moresi
+	email = peter.moresi@pnmac.com
 [credential]
   helper = cache --timeout=3600
 [alias]
@@ -52,3 +52,7 @@
 [mergetool "diffmerge"]
 	trustExitCode = true
 	cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
